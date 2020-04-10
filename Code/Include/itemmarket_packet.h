@@ -1,0 +1,131 @@
+#pragma once
+
+#include <windows.h>
+#include "itemmarket_define.h"
+
+#pragma pack(push)
+#pragma pack(1)
+
+enum EITEMMARKET_PACKET_CMD
+{
+	ITEMMARKET_PACKET_CMD_CLIENT_ENTER,					//	进入交易中心
+	ITEMMARKET_PACKET_CMD_CLIENT_LEAVE,					//	离开交易中心
+
+	ITEMMARKET_PACKET_CMD_CLIENT_ITEM_INFO_LIST,		//	客户端接收交易中心的所有物品信息
+	ITEMMARKET_PACKET_CMD_CLIENT_ITEM_INFO,				//	客户端接收交易中心的某物品信息
+
+	ITEMMARKET_PACKET_CMD_CLIENT_REQUEST_SELL,			//	客户端申请出售物品
+	ITEMMARKET_PACKET_CMD_CLIENT_REQUEST_BUY,			//	客户端申请购买物品
+	ITEMMARKET_PACKET_CMD_CLIENT_RESPONCE_SELL,			//	回复客户端物品出售申请
+	ITEMMARKET_PACKET_CMD_CLIENT_RESPONCE_BUY,			//	回复客户端物品购买申请
+
+	ITEMMARKET_PACKET_CMD_CENTERSERVER_REQUEST_SELL,	//	中心服务器申请确认出售
+	ITEMMARKET_PACKET_CMD_CENTERSERVER_RESPONCE_SELL,	//	中心服务器收到确认出售
+	ITEMMARKET_PACKET_CMD_CENTERSERVER_ACQUIRE_ITEM,	//	中心服务器申请角色获得物品
+
+	ITEMMARKET_PACKET_CMD_CENTERSERVER_REQUEST_BUY, // 中心服务器要求买东西 add by zp
+	ITEMMARKET_PACKET_CMD_RESPONSE_CENTERSERVER_REQUEST_BUY, // 响应中心服务器购买的消息,扣掉金元宝是否成功
+
+	ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYPRICE,             // GM修改购买价格
+	ITEMMARKET_PACKET_CMD_RESPONCE_GM_MODIFY,                // 响应GM修改价格
+
+	ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYPRICEUPER,          // GM修改上涨价格
+	ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYLEVEL,              // GM修改购买等级
+
+	ITEMMARKET_PACKET_CMD_GM_MODIFY_DAY_LIMITCOUNT,        // GM修改每天的限制
+};
+
+struct marketItemPacketInfo
+{
+	DWORD itemID;
+	DWORD sellPrice;
+	DWORD buyPrice;
+	float priceFluctuate;
+
+	DWORD dwSystemCountPerDay;   // 系统每天供应量
+	int dwSellCountPerDay;     // 玩家每天卖入量
+	DWORD dwBuyCountPerDay;      // 玩家每天买入量
+	DWORD dwDayCount;            // 每天玩家买的数量
+
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYPRICEUPER_Data
+{
+	int iItemId;
+	int iModifyPriceUper;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_GM_MODIFY_DAY_LIMITCOUNT_Data
+{
+	int iItemId;
+	int iModifyDayLimitCount;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYLEVEL_Data
+{
+	int iItemId;
+	int iLevel;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_GM_MODIFY_BUYPRICE_Data
+{
+	int iItemId;
+	int iModifyPrice;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_RESPONCE_GM_MODIFY_Data
+{
+	BOOL bRlt;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CENTERSERVER_REQUEST_BUY_Data
+{
+	DWORD dwItemId;
+	DWORD dwPrice;
+	BYTE byMark;
+	WORD	wKey;
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_RESPONSE_CENTERSERVER_REQUEST_BUY_Data
+{
+	DWORD dwItemId;
+	BYTE  bySubCoinRlt;  // 1 表示成功，0 表示失败
+	BYTE byMark;         // 
+};
+
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_ITEM_INFO_LIST_Data
+{
+	BYTE count;
+	marketItemPacketInfo itemInfo[1];
+};
+
+struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_ITEM_INFO_Data
+{
+	marketItemPacketInfo itemInfo;
+};
+
+typedef struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_REQUEST_SELL_Data
+{
+	DWORD itemID;
+	DWORD price; 
+}ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_REQUEST_BUY_Data;
+
+typedef struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_RESPONCE_SELL_Data
+{
+	int result;
+}ITEMMARKET_ITEMMARKET_PACKET_CMD_CLIENT_RESPONCE_BUY_Data;
+
+typedef struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CENTERSERVER_REQUEST_SELL_Data
+{
+	DWORD itemID;
+	DWORD price;
+}ITEMMARKET_ITEMMARKET_PACKET_CMD_CENTERSERVER_RESPONCE_SELL_Data;
+
+typedef struct ITEMMARKET_ITEMMARKET_PACKET_CMD_CENTERSERVER_ACQUIRE_ITEM_Data
+{
+	DWORD itemID;
+	WORD	wKey;
+};
+
+#pragma pack(pop)

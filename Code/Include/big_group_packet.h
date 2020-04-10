@@ -1,0 +1,49 @@
+#pragma once
+
+class SimpleGroupInfo
+{
+public:
+	DWORD m_dwGropuID;
+	DWORD m_dwGroupMembersUIN[MAX_GROUP_MEMBER];
+	char m_szGroupMembersName[MAX_GROUP_MEMBER][MAX_NAMELEN];
+};
+
+enum
+{
+	REQUEST_OPEN_BIG_GROUP,
+	REQUEST_CLOSE_BIG_GROUP,
+	REQUEST_LEAVE_BIG_GROUP,
+	REQUEST_DEL_BIG_GROUP,
+	OPEN_BIG_GROUP,
+	SEND_BIG_GROUP_INFO,
+	SEND_MEM_GROUP_INFO,
+	SEND_DELETE_GROUP,
+};
+
+struct BIG_GROUP_OPEN_BIG_GROUP_Data 
+{
+	DWORD	m_dwID;
+	BYTE	m_byMasterGroupIndex;
+	DWORD	m_dwGroupsID[MAX_BIG_GROUP_MEM];
+	DWORD	m_dwGroupMembersUIN[MAX_BIG_GROUP_MEM][MAX_GROUP_MEMBER];
+	char 	m_szGroupMembersName[MAX_BIG_GROUP_MEM][MAX_GROUP_MEMBER][MAX_NAMELEN];
+};
+
+struct BIG_GROUP_SEND_BIG_GROUP_INFO_Data 
+{
+	DWORD	m_dwID;
+	BYTE	m_byMasterGroupIndex;
+	DWORD	m_dwGroupsID[MAX_BIG_GROUP_MEM];
+	DWORD	m_dwGroupMembersUIN[MAX_BIG_GROUP_MEM][MAX_GROUP_MEMBER];
+	char 	m_szGroupMembersName[MAX_BIG_GROUP_MEM][MAX_GROUP_MEMBER][MAX_NAMELEN];
+};
+
+struct BIG_GROUP_SEND_MEM_GROUP_INFO_Data 
+{
+	SimpleGroupInfo pSimpleInfo;
+};
+
+struct BIG_GROUP_SEND_DELETE_GROUP_Data 
+{
+	DWORD dwGroupID;
+};

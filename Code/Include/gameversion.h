@@ -1,0 +1,13 @@
+#ifndef _VERSION_H_
+#define _VERSION_H_
+
+#define	CN_AREA_CODE			0xFD
+
+#define	CN_VERSION_CODE			0x111044
+#define VERSION_STR			"0.9.1044"
+#define VERSION_DATE			"1044"
+
+#define VERSION_STR2			VERSION_STR"-"VERSION_DATE
+#define MAKE_VERSION_CODE(AREA)	(AREA##_AREA_CODE << 24) | (AREA##_VERSION_CODE)
+
+#endif

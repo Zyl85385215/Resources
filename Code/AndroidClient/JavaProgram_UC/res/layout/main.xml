@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#A0A0A0A0">
+
+	<TextView android:id="@+id/hint_textview"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:gravity="center" 
+		android:text="杭州斯凯网络Android支付demo"
+		android:textSize="25sp" android:textStyle="bold" />
+
+	<Button android:id="@+id/button1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:gravity="center" android:text="启动付费" android:textColor="#ffffff" />
+
+</LinearLayout>

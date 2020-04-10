@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MFC\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{624daa72-9109-48ee-8b51-e3f9d882bbc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{3345f802-979e-4053-9430-d30eed7b67da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\SvrNetGate.rc2">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+    <None Include="res\SvrNetGate.ico">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SvrNetGate.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="SvrNetGateDlg.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnlist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnExtstr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnThread.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\TimeControl.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NetGateCfg.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\singleton.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NetGateCenter.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ZNetServer.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ZNetPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_groupCmd.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_system_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_user_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\debug_def.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\random.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrNetGate.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrNetGateDlg.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnExtstr.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnlist.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnThread.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\TimeControl.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NetGateCfg.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NetGateCenter.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ZNetServer.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\debug_def.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\random.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SvrNetGate.rc">
+      <Filter>MFC\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SystemFile">
+      <UniqueIdentifier>{c9f2dacf-6413-4283-b802-d97ce08fef4a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="SystemFile\others">
+      <UniqueIdentifier>{cf0540d6-5c6c-43e1-ba78-ee54608bbf43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_DataFile">
+      <UniqueIdentifier>{3ba0272d-9713-420f-bf8d-5d5d99edcfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile">
+      <UniqueIdentifier>{7d43da72-d19c-48f9-a032-237c708a8a54}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="_NetFile">
+      <UniqueIdentifier>{b7583082-0dd9-409e-ab15-265871749c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile">
+      <UniqueIdentifier>{0602cdf0-8aea-43c9-86bb-7224faebf6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemFile\others\resource">
+      <UniqueIdentifier>{0caff9a1-f210-482f-adc1-8ca8afab3791}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="_IncludePacket">
+      <UniqueIdentifier>{78a74fe6-74a4-4035-84a0-b5d5a48d763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile\CocosIO">
+      <UniqueIdentifier>{0476b28c-7505-4b15-873f-58d85d330703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\CocosIO">
+      <UniqueIdentifier>{3d8b46f9-08d7-43b3-bf33-6ba50eba81a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemFile\_Scene">
+      <UniqueIdentifier>{2778a63e-2597-436d-acf9-877fa0062337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_IncludeCfg">
+      <UniqueIdentifier>{427cec4d-aadf-4d3d-84f3-6d87e7c01889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Main">
+      <UniqueIdentifier>{c2f1c704-dedf-4900-b13a-ccc1a083522c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile\Other">
+      <UniqueIdentifier>{50eb2bbd-3608-4950-9612-9b801c150a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile\Data">
+      <UniqueIdentifier>{db999f30-93cd-4844-9155-2815ae3d6253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Login">
+      <UniqueIdentifier>{f29f3147-4d08-46c8-9fee-6f56cb023e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Main\Item">
+      <UniqueIdentifier>{aa9e34f3-f8cf-49d5-93d0-6fdaadaab69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Main\Active">
+      <UniqueIdentifier>{4927b4ac-578b-4462-b1a5-5933d93015b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Main\Slave">
+      <UniqueIdentifier>{9428febe-24e2-4f16-90a1-73e79692b22d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\Main\Relation">
+      <UniqueIdentifier>{e566e2d6-b093-4b24-b59d-21b5ca392885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemFile\TP_IO">
+      <UniqueIdentifier>{be43a017-8a5f-4662-9703-9a6f599028f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Script">
+      <UniqueIdentifier>{99bf12f9-3557-48c8-b9a3-2506e6bc68cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\IosGameClient.ico">
+      <Filter>SystemFile\others\resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IosGameClient.rc">
+      <Filter>SystemFile\others\resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\xnlist.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalDefine.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalFunction.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\xnExtstr.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\Interface.h">
+      <Filter>_UIFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CtrlObj.h">
+      <Filter>_UIFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\ODSocket.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\SocketManager.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\PacketCenter.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\InterfaceLayer.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoginScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MyTextInput.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\EffectSprite.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\TxtLinkView.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\singleton.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SoundCenter.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UpdateScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ReconnectGame.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\AmzDataBase.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\BuffObj.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\SkillConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\StateConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ItemData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\EquipData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\ItemConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\EquipConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MainMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapSprite.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapTile.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapLayer.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\UserData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapControl.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_ac_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_amzdata_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_groupCmd.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_home_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_muli_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_system_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_user_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ZNetPacket.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\SkinConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapOthers.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\TextConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\ParticleLayer.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\GuideLayer.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\GuideCenter.h">
+      <Filter>_MapFile\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\ParticleCenter.h">
+      <Filter>_MapFile\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\stdafx.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapMouse.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\EffectObj.h">
+      <Filter>_MapFile\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_slave_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_item_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_mapobj_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapAIObj.h">
+      <Filter>_MapFile\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapObj.h">
+      <Filter>_MapFile\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapObjManagers.h">
+      <Filter>_MapFile\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MapPlayer.h">
+      <Filter>_MapFile\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MapConfig.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MiniRadio.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\debug_def.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SelLineMenu.h">
+      <Filter>_UIFile\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LoginMenu.h">
+      <Filter>_UIFile\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CreateRoleMenu.h">
+      <Filter>_UIFile\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\SlaveConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_yjgslave_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\SlaveData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\HorseConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\HorseData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\BagMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ItemInfoMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_mapcmd_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\EnemyConfig.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ControlMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\BankMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipStarMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\StoneComposeMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\GetNumMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MapStaticCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ClientChat.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\UserParamMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MallConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\UserConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MallMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShopMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\MObjActControl.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\QuestConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MissonMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\FaceConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ClientFlag.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ClientQuest.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\TeamMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SkillMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MapCopyConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_activity_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_rpgchat_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\TestAwardCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\TestLibraryCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\GameActivity.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MapCopyMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\SkillData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\StateData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\VipConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\FamilyCenter.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\AutoMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\TitleConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ManorMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\FortCenter.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MailMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MCAwardMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_rank_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\RankData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\ActivedegreeCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SkillSPMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\EnemyDropConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\GameActivityCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LuckBetMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_award_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\GameAwardCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\GameAwardData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\StarSysConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\StarSysMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\NASaleMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ActivityMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\GameAwardMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_nasale_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipDuraMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\android\JniUtil.h">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\VipMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SlaveFormCtrl.h">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\HorseObjMenu.h">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\PetObjMenu.h">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\WTestMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\RankMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChatMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FriendMenu.h">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FamilyMenu.h">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FriendChooseMenu.h">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MentoringMenu.h">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\ios_relation_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\RelationshipData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MentoringCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\GreenModeMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ClientAchievement.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\AchievementCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\AchievementMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MakeLayer.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MakeSkillMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MarryMenu.h">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\android\IOSThirdPlat.h">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ActivateMenu.h">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLoadScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HttpDownThread.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FaqHelpMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\FaqHelpCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FaqHelpMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\FaqHelpCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FaqHelpMenu.h">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\FaqHelpCfg.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ResManage.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\android\com_mejoygame_rpgwar_JniCall.h">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Include\random.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FlappybirdMenu.h">
+      <Filter>_UIFile\Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\xnlist.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalFunction.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\xnExtstr.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\Interface.cpp">
+      <Filter>_UIFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CtrlObj.cpp">
+      <Filter>_UIFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\ODSocket.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\SocketManager.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\PacketCenter.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\InterfaceLayer.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoginScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MyTextInput.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\EffectSprite.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\TxtLinkView.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SoundCenter.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UpdateScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ReconnectGame.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\AmzDataBase.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\BuffObj.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\StateConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\SkillConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ItemData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\EquipData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\EquipConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\ItemConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MainMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapSprite.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapTile.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapLayer.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\UserData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapControl.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\SkinConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapOthers.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\TextConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\ParticleLayer.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\GuideLayer.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\GuideCenter.cpp">
+      <Filter>_MapFile\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\ParticleCenter.cpp">
+      <Filter>_MapFile\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapMouse.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MObjActControl.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\EffectObj.cpp">
+      <Filter>_MapFile\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapAIObj.cpp">
+      <Filter>_MapFile\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapObj.cpp">
+      <Filter>_MapFile\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapObjManagers.cpp">
+      <Filter>_MapFile\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\MapPlayer.cpp">
+      <Filter>_MapFile\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MapConfig.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MiniRadio.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\debug_def.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SelLineMenu.cpp">
+      <Filter>_UIFile\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LoginMenu.cpp">
+      <Filter>_UIFile\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CreateRoleMenu.cpp">
+      <Filter>_UIFile\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\SlaveConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\SlaveData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\HorseConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\Horsedata.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\BagMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ItemInfoMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\EnemyConfig.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ControlMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\BankMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipStarMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\StoneComposeMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\GetNumMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MapStaticCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\UserParamMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MallConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\UserConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MallMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShopMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientChat.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\QuestConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MissonMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\FaceConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientQuest.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\TeamMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SkillMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MapCopyConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\GameActivity.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MapCopyMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\SkillData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\StateData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\FamilyCenter.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\TestAwardCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\TestLibraryCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\VipConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\AutoMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\TitleConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ManorMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\FortCenter.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MailMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MCAwardMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\RankData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\ActivedegreeCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SkillSPMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\EnemyDropConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\GameActivityCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LuckBetMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\GameAwardData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\GameAwardCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\StarSysConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\StarSysMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\NASaleMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ActivityMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\GameAwardMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipDuraMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\JniUtil.cpp">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\VipMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SlaveFormCtrl.cpp">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\HorseObjMenu.cpp">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\PetObjMenu.cpp">
+      <Filter>_UIFile\Main\Slave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\WTestMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\RankMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChatMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FamilyMenu.cpp">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FriendChooseMenu.cpp">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FriendMenu.cpp">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MentoringMenu.cpp">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\RelationshipData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MentoringCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\GreenModeMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ClientAchievement.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\AchievementCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\AchievementMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MakeLayer.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MakeSkillMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MarryMenu.cpp">
+      <Filter>_UIFile\Main\Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\IOSThirdPlat.cpp">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ActivateMenu.cpp">
+      <Filter>_UIFile\Main\Active</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLoadScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HttpDownThread.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FaqHelpMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\FaqHelpCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FaqHelpMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\FaqHelpCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FaqHelpMenu.cpp">
+      <Filter>_UIFile\Main\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\FaqHelpCfg.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ResManage.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\com_mejoygame_rpgwar_JniCall.cpp">
+      <Filter>SystemFile\TP_IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Include\random.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FlappybirdMenu.cpp">
+      <Filter>_UIFile\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

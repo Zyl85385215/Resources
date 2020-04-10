@@ -1,0 +1,7 @@
+
+
+cd /cygdrive/e/Code/RpgGame/AndroidClient/proj.android
+
+./build_native.sh
+
+

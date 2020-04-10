@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SystemFile">
+      <UniqueIdentifier>{c9f2dacf-6413-4283-b802-d97ce08fef4a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="SystemFile\others">
+      <UniqueIdentifier>{cf0540d6-5c6c-43e1-ba78-ee54608bbf43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_DataFile">
+      <UniqueIdentifier>{3ba0272d-9713-420f-bf8d-5d5d99edcfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile">
+      <UniqueIdentifier>{7d43da72-d19c-48f9-a032-237c708a8a54}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="_NetFile">
+      <UniqueIdentifier>{b7583082-0dd9-409e-ab15-265871749c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile">
+      <UniqueIdentifier>{0602cdf0-8aea-43c9-86bb-7224faebf6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemFile\others\resource">
+      <UniqueIdentifier>{0caff9a1-f210-482f-adc1-8ca8afab3791}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="_IncludePacket">
+      <UniqueIdentifier>{78a74fe6-74a4-4035-84a0-b5d5a48d763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_MapFile\CocosIO">
+      <UniqueIdentifier>{0476b28c-7505-4b15-873f-58d85d330703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\CocosIO">
+      <UniqueIdentifier>{3d8b46f9-08d7-43b3-bf33-6ba50eba81a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\MenuLogin">
+      <UniqueIdentifier>{4abd6693-a9a4-4402-97da-7f2a2c99a450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemFile\_Scene">
+      <UniqueIdentifier>{2778a63e-2597-436d-acf9-877fa0062337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\MenuGame">
+      <UniqueIdentifier>{fd85adf4-709b-41a6-b360-6b75e61bdb12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_IncludeCfg">
+      <UniqueIdentifier>{427cec4d-aadf-4d3d-84f3-6d87e7c01889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__WarCenter">
+      <UniqueIdentifier>{07248cd2-268c-407d-a809-58ec559a831d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\MenuGame\League">
+      <UniqueIdentifier>{34b565d1-a3a4-4713-9f03-c12c00211013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_UIFile\MenuGame\Item">
+      <UniqueIdentifier>{22419c38-2f01-4345-afc2-be2ee3c818bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\IosGameClient.ico">
+      <Filter>SystemFile\others\resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IosGameClient.rc">
+      <Filter>SystemFile\others\resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\xnlist.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalDefine.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalFunction.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\xnExtstr.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\Interface.h">
+      <Filter>_UIFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CtrlObj.h">
+      <Filter>_UIFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\ODSocket.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\SocketManager.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetFile\PacketCenter.h">
+      <Filter>_NetFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\InterfaceLayer.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoginScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MyTextInput.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\EffectSprite.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapFile\EffectObj.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\TxtLinkView.h">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\singleton.h">
+      <Filter>SystemFile\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SoundCenter.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UpdateScene.h">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ReconnectGame.h">
+      <Filter>SystemFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MainMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\AmzDataBase.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ShipData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\GuideTipConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\WarShipUI.h">
+      <Filter>__WarCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\WarWeather.h">
+      <Filter>__WarCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\WarCenter.h">
+      <Filter>__WarCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\BuffObj.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\WarComand.h">
+      <Filter>__WarCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FightMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\WarCopyConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\WarCopyMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShipMngMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\UserData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LoginView.h">
+      <Filter>_UIFile\MenuLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\SkillConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\StateConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\TalkUI.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\ItemData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\BattleReadyMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ParticleLayer.h">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\EquipData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\CaptainData.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\ItemConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\EquipConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChangeBattleShipMenu.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChangePosMenu.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipMenu.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ReadyPosMenu.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\CardConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\MagicConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\EquipLvUpConfig.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\VipMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FriendMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MailMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChatMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataFile\LeagueCenter.h">
+      <Filter>_DataFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\DailyLoginRewardMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ActivityMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MazeMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ConvoyMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CampChangePosMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ZNetPacket.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueRankMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueArrayMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueBattleChooseMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueBattleMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueBattleReportMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueBuildMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueChangePosMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueCreateMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueInfoMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueJoinMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueListMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueManageMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeagueMemberMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChooseCaptainMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChooseEquipMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChooseLeagueBattleObjMenu.h">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipLvUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipPetLvUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipPhaseUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\EquipTransferMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ItemMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\FragmentMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MagicDataMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MagicLevelUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\MagicPhaseUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SkillLvUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SkillMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CardBagMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CardPhaseUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CardChangeAttMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CardInfoMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\CardLevelUpMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ChooseCardMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\LeaderSkillMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\RoleMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\SellCardMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShopItemMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShopLimitMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShopMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ShopVipMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\WarPkMenu.h">
+      <Filter>_MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\ItemInfoMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\RewardMenu.h">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncludeCfg\FlagConfig.h">
+      <Filter>_IncludeCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UIFile\GetCardMenu.h">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_warcmd_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_ac_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_amzdata_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_groupCmd.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_home_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_muli_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_system_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwPacket\ios_user_packet.h">
+      <Filter>_IncludePacket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\xnlist.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalFunction.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\xnExtstr.cpp">
+      <Filter>SystemFile\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\Interface.cpp">
+      <Filter>_UIFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CtrlObj.cpp">
+      <Filter>_UIFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\ODSocket.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\SocketManager.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetFile\PacketCenter.cpp">
+      <Filter>_NetFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\InterfaceLayer.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoginScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MyTextInput.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\EffectSprite.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapFile\EffectObj.cpp">
+      <Filter>_MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\TxtLinkView.cpp">
+      <Filter>_UIFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SoundCenter.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UpdateScene.cpp">
+      <Filter>SystemFile\_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ReconnectGame.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MainMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\AmzDataBase.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ShipData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\GuideTipConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\WarWeather.cpp">
+      <Filter>__WarCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\WarShipUI.cpp">
+      <Filter>__WarCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\WarCenter.cpp">
+      <Filter>__WarCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\BuffObj.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\WarComand.cpp">
+      <Filter>__WarCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FightMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\WarCopyConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\WarCopyMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShipMngMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\UserData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LoginView.cpp">
+      <Filter>_UIFile\MenuLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\StateConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\SkillConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\TalkUI.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\ItemData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\BattleReadyMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ParticleLayer.cpp">
+      <Filter>_MapFile\CocosIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\EquipData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\CaptainData.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\EquipConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\ItemConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChangeBattleShipMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ReadyPosMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\CardConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\MagicConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\EquipLvUpConfig.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\VipMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FriendMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MailMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChatMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataFile\LeagueCenter.cpp">
+      <Filter>_DataFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\DailyLoginRewardMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ActivityMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MazeMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ConvoyMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CampChangePosMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueArrayMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueBattleChooseMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueBattleMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueBattleReportMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueBuildMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueChangePosMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueCreateMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueInfoMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueJoinMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueListMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueManageMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueMemberMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeagueRankMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChooseCaptainMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChooseEquipMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChooseLeagueBattleObjMenu.cpp">
+      <Filter>_UIFile\MenuGame\League</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipLvUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipPetLvUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipPhaseUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipTransferMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ItemMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\FragmentMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MagicDataMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MagicLevelUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\MagicPhaseUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SkillLvUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SkillMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CardBagMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CardChangeAttMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CardInfoMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CardLevelUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\CardPhaseUpMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChooseCardMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\LeaderSkillMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\RoleMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\SellCardMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShopItemMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShopLimitMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShopMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ShopVipMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\WarPkMenu.cpp">
+      <Filter>SystemFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\EquipMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ItemInfoMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\RewardMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncludeCfg\FlagConfig.cpp">
+      <Filter>_IncludeCfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\GetCardMenu.cpp">
+      <Filter>_UIFile\MenuGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UIFile\ChangePosMenu.cpp">
+      <Filter>_UIFile\MenuGame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

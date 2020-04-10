@@ -1,0 +1,40 @@
+#pragma once
+#include <Windows.h>
+
+#define	POOL_MAX_MEMBER		4
+#define POOL_MAX_COUNT	20
+#define USE_ITEM_RESTART_TIME 60
+
+enum
+{
+	REQUEST_OPEN_FISH_POOL,
+	REQUEST_CLOSE_FISH_POOL,
+	REQUEST_JOIN_FISH_POOL,
+	REQUEST_LEAVE_FISH_POOL,
+	FISH_POOL_OPEN,
+	FISH_POOL_INFO,
+	FISH_POOL_TIME_INFO,
+	FISH_POOL_RESTART_KICKOUT_TIME,
+};
+
+struct FISH_POOL_REQUEST_JOIN_FISH_POOL_Data
+{
+	int nPool;
+};
+
+struct FISH_POOL_FISH_POOL_OPEN_Data
+{
+	BYTE byFishPoolMemCntList[POOL_MAX_COUNT];
+};
+
+struct FISH_POOL_FISH_POOL_INFO_Data
+{
+	BYTE byFishPoolMemCntList[POOL_MAX_COUNT];
+};
+
+struct FISH_POOL_FISH_POOL_TIME_INFO_Data
+{
+	BYTE site;
+	int  canUseTime;
+	int	 kickOutTime;
+};

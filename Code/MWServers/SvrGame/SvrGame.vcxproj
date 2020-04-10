@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{728DF35A-7EEA-46B0-B473-826FF7506C19}</ProjectGuid>
+    <RootNamespace>SvrGame</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>Debug_Rpg$(ProjectName)</TargetName>
+    <OutDir>..\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Rpg$(ProjectName)</TargetName>
+    <OutDir>..\release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_ISSERVER;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\IosGameClient\Classes\IncludeCfg;..\..\MwInclude;..\..\IosGameClient\Classes\Include;.\Src;.\src\SCRIPTMODULE;..\..\LuaPlus;..\..\LuaPlusHelper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\MwLib;..\..\LIB</AdditionalLibraryDirectories>
+      <AdditionalDependencies>JNetStaticLib_d.lib;MysqlDll_d.lib;LuaPlusLibD_1100.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISSERVER;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\IosGameClient\Classes\IncludeCfg;..\..\MwInclude;..\..\IosGameClient\Classes\Include;.\Src;.\src\SCRIPTMODULE;..\..\LuaPlus;..\..\LuaPlusHelper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\MwLib;..\..\LIB</AdditionalLibraryDirectories>
+      <AdditionalDependencies>JNetStaticLib.lib;MysqlDll.lib;LuaPlusLibD_1100.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>subwcrev SvrGame.vcxproj ../../include/svnversion.tmpl ../../include/svnversion.h</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\SvrGame.ico" />
+    <None Include="res\SvrGame.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\AchievementCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ActivedegreeCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyDropConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\EquipConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ExpMultipleCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\GameActivityCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\GameAwardCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\HorseConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ItemConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MallConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapCopyConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapStaticCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MentoringCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\QuestConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\SlaveConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\StarSysConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestAwardCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestLibraryCfg.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TextConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TitleConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\UserConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\VipConfig.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_activity_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_ac_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_amzdata_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_award_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_groupCmd.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_home_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_mapobj_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_muli_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_nasale_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_rank_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_relation_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_rpgchat_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_system_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_user_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_yjgslave_packet.h" />
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ZNetPacket.h" />
+    <ClInclude Include="..\..\LuaPlusHelper\LuaClassObject.h" />
+    <ClInclude Include="..\..\LuaPlusHelper\LuaStateManager.h" />
+    <ClInclude Include="..\..\MwInclude\DBControl.h" />
+    <ClInclude Include="..\..\MwInclude\DBIO.h" />
+    <ClInclude Include="..\..\MwInclude\DBLogControl.h" />
+    <ClInclude Include="..\..\MwInclude\DBTables.h" />
+    <ClInclude Include="..\..\MwInclude\debug_def.h" />
+    <ClInclude Include="..\..\MwInclude\md5Capi.h" />
+    <ClInclude Include="..\..\MwInclude\MysqlDB.h" />
+    <ClInclude Include="..\..\MwInclude\singleton.h" />
+    <ClInclude Include="..\..\MwInclude\TimeControl.h" />
+    <ClInclude Include="..\..\MwInclude\xnExtstr.h" />
+    <ClInclude Include="..\..\MwInclude\xnlist.h" />
+    <ClInclude Include="..\..\MwInclude\xnThread.h" />
+    <ClInclude Include="..\..\MwInclude\ZLogFile.h" />
+    <ClInclude Include="..\..\MwInclude\ZNet.h" />
+    <ClInclude Include="LuaDialog.h" />
+    <ClInclude Include="NoticeDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="src\AchievementCenter.h" />
+    <ClInclude Include="src\AmzDataServer.h" />
+    <ClInclude Include="src\BossState.h" />
+    <ClInclude Include="src\CallMapEnemy.h" />
+    <ClInclude Include="src\ChatCenter.h" />
+    <ClInclude Include="src\DebugMsg.h" />
+    <ClInclude Include="src\ExpMultipleData.h" />
+    <ClInclude Include="src\FamilyCenter.h" />
+    <ClInclude Include="src\FamilyObject.h" />
+    <ClInclude Include="src\FortCenter.h" />
+    <ClInclude Include="src\FriendCenter.h" />
+    <ClInclude Include="src\FsGameCenter.h" />
+    <ClInclude Include="src\GameActivityCenter.h" />
+    <ClInclude Include="src\GameAwardCenter.h" />
+    <ClInclude Include="src\GMActiveCfg.h" />
+    <ClInclude Include="src\HomeBattleCenter.h" />
+    <ClInclude Include="src\HorseData.h" />
+    <ClInclude Include="src\ItemCenter.h" />
+    <ClInclude Include="src\ItemManage.h" />
+    <ClInclude Include="src\ItemOpCenter.h" />
+    <ClInclude Include="src\MailCenter.h" />
+    <ClInclude Include="src\MakeSkillData.h" />
+    <ClInclude Include="src\MapObjCenter.h" />
+    <ClInclude Include="src\MapSObject.h" />
+    <ClInclude Include="src\MarkGameDB.h" />
+    <ClInclude Include="src\MarryCenter.h" />
+    <ClInclude Include="src\MCopyCenter.h" />
+    <ClInclude Include="src\MentoringCenter.h" />
+    <ClInclude Include="src\NASaleCenter.h" />
+    <ClInclude Include="src\NewActivityMsgCenter.h" />
+    <ClInclude Include="src\NumberData.h" />
+    <ClInclude Include="src\P2PAskCenter.h" />
+    <ClInclude Include="src\RankCenter.h" />
+    <ClInclude Include="src\ScriptModule\LuaStateManagerPlus.h" />
+    <ClInclude Include="src\ServerCfg.h" />
+    <ClInclude Include="src\ShopCenter.h" />
+    <ClInclude Include="src\SkillCenter.h" />
+    <ClInclude Include="src\SlaveData.h" />
+    <ClInclude Include="src\SlaveOpCenter.h" />
+    <ClInclude Include="src\TeamData.h" />
+    <ClInclude Include="src\TitleCenter.h" />
+    <ClInclude Include="src\UserData.h" />
+    <ClInclude Include="src\UserDataEx.h" />
+    <ClInclude Include="src\UserFlag.h" />
+    <ClInclude Include="src\UserList.h" />
+    <ClInclude Include="src\UserQuest.h" />
+    <ClInclude Include="src\UserRecord.h" />
+    <ClInclude Include="src\UserWealth.h" />
+    <ClInclude Include="src\VIPCenter.h" />
+    <ClInclude Include="src\WarRank.h" />
+    <ClInclude Include="src\WorldFlag.h" />
+    <ClInclude Include="src\WorldTest.h" />
+    <ClInclude Include="src\ZNetGamesvr.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SvrGame.h" />
+    <ClInclude Include="SvrGameDlg.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\AchievementCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ActivedegreeCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyDropConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\EquipConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ExpMultipleCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\GameActivityCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\GameAwardCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\HorseConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ItemConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MallConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapCopyConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapStaticCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MentoringCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\QuestConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\SlaveConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\StarSysConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TestAwardCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TestLibraryCfg.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TextConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TitleConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\UserConfig.cpp" />
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\VipConfig.cpp" />
+    <ClCompile Include="..\..\LuaPlusHelper\LuaStateManager.cpp" />
+    <ClCompile Include="..\..\MwInclude\DBControl.cpp" />
+    <ClCompile Include="..\..\MwInclude\DBIO.cpp" />
+    <ClCompile Include="..\..\MwInclude\DBLogControl.cpp" />
+    <ClCompile Include="..\..\MwInclude\debug_def.cpp" />
+    <ClCompile Include="..\..\MwInclude\md5Capi.cpp" />
+    <ClCompile Include="..\..\MwInclude\TimeControl.cpp" />
+    <ClCompile Include="..\..\MwInclude\xnExtstr.cpp" />
+    <ClCompile Include="..\..\MwInclude\xnlist.cpp" />
+    <ClCompile Include="..\..\MwInclude\xnThread.cpp" />
+    <ClCompile Include="..\..\MwInclude\ZLogFile.cpp" />
+    <ClCompile Include="LuaDialog.cpp" />
+    <ClCompile Include="NoticeDialog.cpp" />
+    <ClCompile Include="src\AchievementCenter.cpp" />
+    <ClCompile Include="src\AmzDataServer.cpp" />
+    <ClCompile Include="src\BossState.cpp" />
+    <ClCompile Include="src\CallMapEnemy.cpp" />
+    <ClCompile Include="src\ChatCenter.cpp" />
+    <ClCompile Include="src\DebugMsg.cpp" />
+    <ClCompile Include="src\ExpMultipleData.cpp" />
+    <ClCompile Include="src\FamilyCenter.cpp" />
+    <ClCompile Include="src\FamilyObject.cpp" />
+    <ClCompile Include="src\FortCenter.cpp" />
+    <ClCompile Include="src\FriendCenter.cpp" />
+    <ClCompile Include="src\FsGameCenter.cpp" />
+    <ClCompile Include="src\GameActivityCenter.cpp" />
+    <ClCompile Include="src\GameAwardCenter.cpp" />
+    <ClCompile Include="src\GMActiveCfg.cpp" />
+    <ClCompile Include="src\HomeBattleCenter.cpp" />
+    <ClCompile Include="src\HorseData.cpp" />
+    <ClCompile Include="src\ItemCenter.cpp" />
+    <ClCompile Include="src\ItemManage.cpp" />
+    <ClCompile Include="src\ItemOpCenter.cpp" />
+    <ClCompile Include="src\MailCenter.cpp" />
+    <ClCompile Include="src\MakeSkillData.cpp" />
+    <ClCompile Include="src\MapObjCenter.cpp" />
+    <ClCompile Include="src\MapSObject.cpp" />
+    <ClCompile Include="src\MarkGameDB.cpp" />
+    <ClCompile Include="src\MarryCenter.cpp" />
+    <ClCompile Include="src\MCopyCenter.cpp" />
+    <ClCompile Include="src\MentoringCenter.cpp" />
+    <ClCompile Include="src\NASaleCenter.cpp" />
+    <ClCompile Include="src\NewActivityMsgCenter.cpp" />
+    <ClCompile Include="src\NumberData.cpp" />
+    <ClCompile Include="src\P2PAskCenter.cpp" />
+    <ClCompile Include="src\RankCenter.cpp" />
+    <ClCompile Include="src\ScriptModule\LuaStateManagerPlus.cpp" />
+    <ClCompile Include="src\ServerCfg.cpp" />
+    <ClCompile Include="src\ShopCenter.cpp" />
+    <ClCompile Include="src\SkillCenter.cpp" />
+    <ClCompile Include="src\SlaveData.cpp" />
+    <ClCompile Include="src\SlaveOpCenter.cpp" />
+    <ClCompile Include="src\TeamData.cpp" />
+    <ClCompile Include="src\TitleCenter.cpp" />
+    <ClCompile Include="src\UserData.cpp" />
+    <ClCompile Include="src\UserDataEx.cpp" />
+    <ClCompile Include="src\UserFlag.cpp" />
+    <ClCompile Include="src\UserList.cpp" />
+    <ClCompile Include="src\UserQuest.cpp" />
+    <ClCompile Include="src\UserRecord.cpp" />
+    <ClCompile Include="src\UserWealth.cpp" />
+    <ClCompile Include="src\VIPCenter.cpp" />
+    <ClCompile Include="src\WarRank.cpp" />
+    <ClCompile Include="src\WorldFlag.cpp" />
+    <ClCompile Include="src\WorldTest.cpp" />
+    <ClCompile Include="src\ZNetGamesvr.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SvrGame.cpp" />
+    <ClCompile Include="SvrGameDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SvrGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SvrGame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MFC\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{670ba737-a1f0-4072-824d-2878214a9ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBSql">
+      <UniqueIdentifier>{d6425c72-68f7-497b-ad40-c1f0e121e246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{22e62b0e-3dbd-48df-8c83-6e85a9685976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\TPLAT">
+      <UniqueIdentifier>{d3c13129-c42f-4eeb-8ec2-5f6896b3a3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\TPCHECK">
+      <UniqueIdentifier>{b59bf007-9c1e-43c8-b169-1334c6782881}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\SvrAccount.rc2">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+    <None Include="res\SvrAccount.ico">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SvrAccount.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="SvrAccountDlg.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\singleton.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnThread.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\TimeControl.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnlist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ZNetServer.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\AccountCenter.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZLogFile.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ServerCfg.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\DBCreate.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\MysqlDB.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBIO.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBTables.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ZNetPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_ac_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_groupCmd.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_system_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\md5Capi.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\HttpCenter.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\debug_def.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MarkDBCenter.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Base64.h">
+      <Filter>System\TPLAT</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\CX509.h">
+      <Filter>System\TPLAT</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\rsa.h">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\bigint.h">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\md5.h">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ABbase64.h">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\hmacsha1.h">
+      <Filter>System\TPLAT</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\signature_verifier.h">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrAccountDlg.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrAccount.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\TimeControl.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnExtstr.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnlist.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnThread.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ZNetServer.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AccountCenter.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\ZLogFile.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ServerCfg.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\DBCreate.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\DBIO.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\HttpCenter.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\md5Capi.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\debug_def.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MarkDBCenter.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Base64.cpp">
+      <Filter>System\TPLAT</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CX509.cpp">
+      <Filter>System\TPLAT</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\bigint.cpp">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\md5.cpp">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\rsa.cpp">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ABbase64.cpp">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\hmacsha1.cpp">
+      <Filter>System\TPLAT</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\signature_verifier.cpp">
+      <Filter>Logic\TPCHECK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SvrAccount.rc">
+      <Filter>MFC\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

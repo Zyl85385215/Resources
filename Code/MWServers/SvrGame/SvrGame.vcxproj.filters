@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MFC\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{48749e1e-31b6-477c-87e2-7d1f8f298a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{88dc6736-b3c0-43d1-bcf7-80ac9fa934f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{ed274f94-ee70-4006-b56e-a7fa2755ee90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBSql">
+      <UniqueIdentifier>{c048f5df-8898-456f-9da1-6d186e3b4e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Cfg">
+      <UniqueIdentifier>{419041fc-7a0d-4c65-98ea-b3ce0df6bb60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\DataCenter">
+      <UniqueIdentifier>{1d049eea-97b3-4661-8de1-619987bc897d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\OpertionDC">
+      <UniqueIdentifier>{784225be-eb7d-4f5d-84f8-98302f283741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MuliPlay">
+      <UniqueIdentifier>{f8c508f7-30fe-48c0-a7c7-b3e72b89a9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scrpit">
+      <UniqueIdentifier>{caae35f6-a649-4380-99d9-3590edad3d8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\SvrGame.rc2">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+    <None Include="res\SvrGame.ico">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SvrGame.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="SvrGameDlg.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZLogFile.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\singleton.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\TimeControl.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnExtstr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnlist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnThread.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBControl.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBIO.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBTables.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\MysqlDB.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZNetGamesvr.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ServerCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AmzDataServer.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\EquipConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ItemConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserList.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FamilyCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FamilyObject.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FriendCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MailCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChatCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemOpCenter.h">
+      <Filter>Logic\OpertionDC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FsGameCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HomeBattleCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserDataEx.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserWealth.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserDataEx.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShopCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\P2PAskCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DebugMsg.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_ac_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_amzdata_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_groupCmd.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_home_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_muli_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_system_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_user_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ZNetPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NewActivityMsgCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\debug_def.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\SlaveConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NumberData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SlaveData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SlaveOpCenter.h">
+      <Filter>Logic\OpertionDC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_yjgslave_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\HorseConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HorseData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserRecord.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserRecord.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapSObject.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_mapobj_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LuaPlusHelper\LuaClassObject.h">
+      <Filter>Scrpit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptModule\LuaStateManagerPlus.h">
+      <Filter>Scrpit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LuaPlusHelper\LuaStateManager.h">
+      <Filter>Scrpit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserRecord.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserFlag.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_rpgchat_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\UserConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MallConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapStaticCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\QuestConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UserQuest.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameActivityCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestLibraryCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestAwardCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameActivityCenter.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestLibraryCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TestAwardCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TeamData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WorldTest.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapCopyConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyDropConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MCopyCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\VipConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkillCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VIPCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TitleConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TitleCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FortCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemManage.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CallMapEnemy.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RankCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_rank_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ActivedegreeCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WarRank.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapObjCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MapConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\GameActivityCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\GameAwardCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameAwardCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_award_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NASaleCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\StarSysConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_nasale_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\TextConfig.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\ExpMultipleCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ExpMultipleData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BossState.h">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\DBLogControl.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WorldFlag.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MentoringCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\MentoringCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_relation_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\AchievementCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AchievementCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_activity_packet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MarryCenter.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MakeSkillData.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MarkGameDB.h">
+      <Filter>Logic\DataCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\md5Capi.h">
+      <Filter>DBSql</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaDialog.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMActiveCfg.h">
+      <Filter>Logic\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="NoticeDialog.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrGameDlg.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="SvrGame.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\TimeControl.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnExtstr.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnlist.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnThread.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\ZLogFile.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\DBControl.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\DBIO.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZNetGamesvr.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServerCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AmzDataServer.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\EquipConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ItemConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FamilyCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FamilyObject.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FriendCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MailCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserList.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ChatCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemOpCenter.cpp">
+      <Filter>Logic\OpertionDC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FsGameCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HomeBattleCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserDataEx.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserWealth.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserDataEx.cpp" />
+    <ClCompile Include="src\ShopCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\P2PAskCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DebugMsg.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NewActivityMsgCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\debug_def.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\SlaveConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NumberData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SlaveData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SlaveOpCenter.cpp">
+      <Filter>Logic\OpertionDC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\HorseConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HorseData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserRecord.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserRecord.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapSObject.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptModule\LuaStateManagerPlus.cpp">
+      <Filter>Scrpit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LuaPlusHelper\LuaStateManager.cpp">
+      <Filter>Scrpit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserRecord.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserFlag.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\UserConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MallConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapStaticCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\QuestConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserQuest.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameActivityCenter.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TestLibraryCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TestAwardCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TeamData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WorldTest.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyDropConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapCopyConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MCopyCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\VipConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkillCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FortCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VIPCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TitleConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TitleCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CallMapEnemy.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ItemManage.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RankCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ActivedegreeCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WarRank.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapObjCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MapConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\GameActivityCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\GameAwardCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameAwardCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NASaleCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\StarSysConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\TextConfig.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\ExpMultipleCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExpMultipleData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BossState.cpp">
+      <Filter>Logic\MuliPlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\DBLogControl.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WorldFlag.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MentoringCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\MentoringCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\AchievementCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AchievementCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MarryCenter.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MakeSkillData.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MarkGameDB.cpp">
+      <Filter>Logic\DataCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\md5Capi.cpp">
+      <Filter>DBSql</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaDialog.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMActiveCfg.cpp">
+      <Filter>Logic\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="NoticeDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SvrGame.rc">
+      <Filter>MFC\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,121 @@
+#ifndef _SOUND_MACRO_HEADER_H
+#define _SOUND_MACRO_HEADER_H
+enum
+{
+SOUND_MOVE,    
+SOUND_DROP_ITEM,       
+SOUND_SYSTEM_MENU,         
+SOUND_FINISH,         
+SOUND_CANCEL,         
+SOUND_SETTLE,         
+SOUND_PK_MODE_CHANGE,  
+SOUND_EXPAND,        
+SOUND_USE_DRUG,   
+SOUND_PUT_DOWN_DRUG,
+SOUND_USE_WEAPON,        
+SOUND_PUT_DOWN_WEAPON,   
+SOUND_USE_ARMOUR_BODY,
+SOUND_PUT_DOWN_ARMOUR_BODY,
+SOUND_USE_ARMOUR_HEAD,
+SOUND_PUT_DOWN_ARMOUR_HEAD,
+SOUND_USE_ARMOUR_HAND,
+SOUND_PUT_DOWN_ARMOUR_HAND,
+SOUND_USE_ARMOUR_FOOT,
+SOUND_PUT_DOWN_ARMOUR_FOOT,
+SOUND_USE_JEWELRY_NECK,
+SOUND_PUT_DOWN_JEWELRY_NECK,
+SOUND_USE_JEWELRY_FIGER,
+SOUND_PUT_DOWN_JEWELRY_FIGER,
+SOUND_USE_JEWELRY_WAIST,
+SOUND_PUT_DOWN_JEWELRY_WAIST,
+SOUND_USE_MANTLE,
+SOUND_PUT_DOWN_MANTLE,    
+SOUND_USE_BOOK,
+SOUND_PUT_DOWN_BOOK,    
+SOUND_WINDOW_OPEN,          
+SOUND_WINDOW_CLOSE,     
+SOUND_REQUEST_GROUP,        
+SOUND_REQUEST_TRADE,      
+SOUND_REQUEST_GUILD,       
+SOUND_REQUEST_BROTHERHOOD, 
+SOUND_REQUEST_TEACHERHOOD,  
+SOUND_PAGE_CHANGE_DIALOG,   
+SOUND_PAGE_CHANGE_BAG,     
+SOUND_PAGE_CHANGE_SKILL,    
+SOUND_MAIL,
+SOUND_PRIVATE_MSG,
+SOUND_SYSTEM_MESSAGE,
+SOUND_LEVELUP,
+SOUND_ADD_QUESTION,
+SOUND_NEWS,
+SOUND_KEY_PRESS,
+SOUND_KEY_RELEASE,
+SOUND_ANTIWAIGUA,
+SOUND_COMPLETE_QUEST,
+SOUND_DURAMENU,
+SOUND_QUESTCOMPLETE,
+SOUND_BAD_SYSTEM_MESSAGE,
+SOUND_OPERATION_SUCCESSFUL_MESSAGE,
+SOUND_OPERATION_FAILED_MESSAGE,
+SOUND_FLASHICON_MSG,
+SOUND_FLASH_FRIEND,
+SOUND_FLASH_ALLY,
+SOUND_FLASH_FURY,
+SOUND_FLASH_GOOD,
+SOUND_FLASH_PRVCHAT,
+SOUND_FLASH_MAIL,
+SOUND_FLASH_FUP,
+SOUND_FLASH_TVSHOW,
+SOUND_FLASH_XUANYAN,
+SOUND_MAX,
+};
+//#define SOUND_MOVE sound[move]               //移动190.wav
+//#define SOUND_DROP_ITEM "103.wav"           //丢弃103.wav
+//#define SOUND_SYSTEM_MENU "g5.wav"          //系统按钮：人物、包裹、技能、任务、社会关系、国家、地图、摆摊、系统、帮助g5.wav
+//#define SOUND_FINISH  "167.wav"             //确定、完成167.wav
+//#define SOUND_CANCEL "153.wav"              //取消、放弃153.wav
+//#define SOUND_SETTLE "157.wav"              //整理157.wav
+//#define SOUND_PK_MODE_CHANGE "192.wav"      //PK模式切换192.wav
+//#define SOUND_EXPAND "184.wav"              //扩展栏按钮184.wav
+//
+//#define SOUND_USE_DRUG sound[use_drug]            //药品　拿起、吃142.wav
+//#define SOUND_PUT_DOWN_DRUG "115.wav"       //放下115.wav
+//#define SOUND_USE_WEAPON "104.wav"          //武器　拿起、装备104.wav
+//#define SOUND_PUT_DOWN_WEAPON "196.wav"     //放下、卸下196.wav
+//#define SOUND_USE_ARMOUR_BODY "146.wav"
+//#define SOUND_PUT_DOWN_ARMOUR_BODY "171.wav"//衣服146.wav  171.wav
+//#define SOUND_USE_ARMOUR_HEAD "135.wav"
+//#define SOUND_PUT_DOWN_ARMOUR_HEAD "164.wav"//头盔135.wav  164.wav
+//#define SOUND_USE_ARMOUR_HAND "108.wav"
+//#define SOUND_PUT_DOWN_ARMOUR_HAND "130.wav"//护手108.wav  130.wav
+//#define SOUND_USE_ARMOUR_FOOT "109.wav"
+//#define SOUND_PUT_DOWN_ARMOUR_FOOT "148.wav"//鞋子109.wav  148.wav
+//#define SOUND_USE_JEWELRY_NECK "161.wav"
+//#define SOUND_PUT_DOWN_JEWELRY_NECK "166.wav"//项链161.wav  166.wav
+//#define SOUND_USE_JEWELRY_FIGER "137.wav"
+//#define SOUND_PUT_DOWN_JEWELRY_FIGER "111.wav"//戒指137.wav  111.wav
+//#define SOUND_USE_JEWELRY_WAIST "106.wav"
+//#define SOUND_PUT_DOWN_JEWELRY_WAIST "113.wav"//腰带106.wav  113.wav
+//#define SOUND_USE_MANTLE "158.wav"
+//#define SOUND_PUT_DOWN_MANTLE "120.wav"      //披风158.wav  120.wav
+//#define SOUND_USE_BOOK "152.wav"
+//#define SOUND_PUT_DOWN_BOOK "163.wav"        //书籍卷轴152.wav  163.wav
+//
+////窗口：
+//#define SOUND_WINDOW_OPEN "117.wav"          //打开117.wav
+//#define SOUND_WINDOW_CLOSE "184.wav"         //关闭184.wav
+//
+//#define SOUND_REQUEST_GROUP "172.wav"        //组队请求172.wav
+//#define SOUND_REQUEST_TRADE "168.wav"        //交易请求169.wav
+//#define SOUND_REQUEST_GUILD "180.wav"        //帮会请求180.wav
+//#define SOUND_REQUEST_BROTHERHOOD "191.wav"  //结义请求191.wav
+//#define SOUND_REQUEST_TEACHERHOOD "159.wav"  //拜师请求159.wav
+//
+////翻页：
+//#define SOUND_PAGE_CHANGE_DIALOG "150.wav"   //对话150.wav
+//#define SOUND_PAGE_CHANGE_BAG "154.wav"      //包裹154.wav
+//#define SOUND_PAGE_CHANGE_SKILL "162.wav"    //技能162.wav
+//
+//#define SOUND_MAIL "msg.wav"                           // 邮件msg.wav
+
+#endif

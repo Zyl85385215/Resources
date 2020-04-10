@@ -1,0 +1,187 @@
+#ifndef _GROUP_CMD_
+#define _GROUP_CMD_
+
+#include <windows.h>
+
+enum CMD_GROUP {
+    SYSTEM = 0,
+    ACCOUNT,
+    CHAT,
+    GAMEMASTER,
+	UDP,
+	DBASE_CMD,
+	GAMESVRQUERY,
+    CHARACTER = 64,
+	PLAYER,
+    NPC,
+    ENEMY,
+	CHANNEL,
+	TRADE,
+	GAMESYS,
+	GAMEGROUP,
+	BUY,
+	ITEM,
+	QUEST,
+	SHOP,
+	STORAGE,
+	SKILL,
+	SLAVE,
+	REPAIR,
+	MAKE,
+	GAMBLE,
+	RANK,
+	UPGRADE,
+	WANTED,
+	RACING,
+	ARENA,
+	CONF,
+	CONFBANK,
+	AUCTION,
+	COLOR,
+	CHUNK,
+	PRISON,
+	FISKBANK,
+	STAT,
+	DBMANG,
+	ENTIREFFECT,
+	BATTLEARRAY,
+	STALLAGEMENU,
+	STALLAGE,
+	SPECIALEFFECT,
+	STATEEFFECT,
+	NEWDB,
+	GMCMD,
+	GUILD,
+	BATTLEINFO,
+	MAIL,
+	ITEMLEVELUP,
+	BATTLE,
+	SVRUICMD,
+	CENTERSERVER,
+	SERVERLINE,
+	GAMESERVER_MONITOR,
+	HOME,
+	ITEMREBUILD,
+	ITEMTRANSFER,
+	ITEMUNBIND,
+	ITEMBIND,
+	ITEMUNBINDCANCEL,
+	GLOBALVAR,
+	ITEMSELLBUY,
+	PANDORABOX,
+	PAGETRANS,
+	MASTER,// ---------------师徒
+	ITEMEOLITH,
+	COUNTRY_GOURP,// ---------------弱国保护
+	TREASUREBOX,
+	ITEMMOHUA,
+	ITEMSMELT,
+	ITEM_AUCTION,
+	GAME_VALIDATE,
+	GAME_BACKDOOR,
+	BATTLE_SERVER,
+	ACPOINT_BILL,
+	TIME,
+	SLAVE_EVOLUTION_SYSTEM,
+	SLAVE_DIVINATORY_SYSTEM,
+	MAPOBJ_BASEINFO,
+	ITEMJUDGE,
+	ACCOUNT_POINT_SERVICE,
+	ITEMOPERATION,
+	ITEMBURROW,
+	ITEMENCHASE,
+	ITEMEXTIR,
+	NAITEM,
+	SAFE_LOCK,
+	ITEM_ADDTIME,
+	CROP,
+	PLAYERINFO_VIEWER,
+	TEAM_SYSTEM,
+	MAP_COPY_CMD,
+	MAP_COPY,
+	ZSLAVE,
+	NEWRIDE,
+	ITEM_PLUS,
+	MAP_COPY_SPORT,
+	SCHOOL_WAR,
+	GEMUPGRADE,	//宝石升级
+	GEMSPLITE,	//宝石分解
+	ITEMMARKET,
+	NEW_FRIENDS,
+	BOOKSKILL,
+	EQUIPHOLE,		//装备打孔
+	EQUIPADDGEM,    //宝石镶嵌
+	EQUIPREMOVEGEM,
+	MATERIALUPGRADE,
+	NPCMENU,		//NPC打开界面
+	AWARD,			  //各种奖励
+	BOSS_INFO,
+	HOMEBANK,
+	RIDE_PLUS,
+	YINYUAN,		//打开姻缘引导界面
+	GOLDAUCTION,
+	BLACK_WHITE_BATTLE,
+	ITEM_GROW,
+	LUCKLDRAWY,
+	BIG_GROUP,
+	FISH_POOL,
+	ITEMCARVE,
+	PLAYER_COPY,
+	NEWSTALLAGE,
+	NEWSTALLAGEMENU,
+	SEARCH_GROUP,
+	PURPOSESYS,
+
+	CHARACTER2,
+	ACHIEVEMENT,
+
+	IOSFARM,
+
+	AMZDATA	= 200,		//从旧的groupcmd的最后开始
+	WARCMD,
+	USER,
+	NHOME,
+	CMDGROUP_MAX,
+};
+
+enum BATTLE_INFO_TYPE
+{	
+	B_I_T_NONE,
+	B_I_T_DODGE,		// 闪避
+	B_I_T_PARRY,		// 招架
+	B_I_T_MISS,			// 未命中
+	B_I_T_IMMUNE,		// 无效
+	B_I_T_EXP,			// 经验
+	B_I_T_CRITICAL,		// 无视防御
+	B_I_T_WX_HURT,		// 暗器
+	B_I_T_WX_HEAL,		// 五行治疗
+	B_I_T_HUZHU,		// 护主
+	B_I_T_GONGXUE,		// 共血
+	B_I_T_HEAL,			// 治疗
+	B_I_T_REGMP,		// 回蓝
+	B_I_T_WHACK,
+	B_I_T_EXGOLD,
+};//别超过15
+#pragma pack (push)
+#pragma pack (1)
+//battleinfo_type:
+//bit 0-1 -the battle info has positive or minus value,
+//bit 2-5 -the battle info is in dodge,parry,miss,immune,that has no digit to display
+//bit 7 -the battle info contain critical info,and, has digit to display
+
+struct BATTLE_INFO_DATA
+{
+	BYTE	objtype;
+	DWORD	objid;
+	BYTE	battleinfo_type;
+	int		value;
+	BYTE	isskill;
+};
+
+struct BATTLEINFO_0_Data
+{
+	int				 nCnt;
+	BATTLE_INFO_DATA arrData[1];
+};
+#pragma pack (pop)
+#endif

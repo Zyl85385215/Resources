@@ -1,0 +1,46 @@
+#ifndef ITEM_UNBIND_PACKET_H
+#define ITEM_UNBIND_PACKET_H
+
+#pragma pack (push)
+#pragma pack (1)
+
+enum _ITEM_UNBIND
+{	
+	ITEM_UNBIND_OPEN,
+	ITEM_UNBIND_START,   // NPC升级装备	
+	ITEM_UNBIND_TIMEUP,  // 升级需要时间到
+	ITEM_UNBIND_RESULT,  // 判断结果
+	ITEM_UNBIND_END,     // 关闭窗口
+	ITEM_UNBIND_CANCEL,  // 取消升级
+};
+
+enum
+{
+	item_unbind_rlt_success,    // 成功
+	item_unbind_rlt_failed,     // 失败
+
+	item_unbind_rlt_checkpass,  // 检查通过
+	item_unbind_rlt_checkfailed // 物品不足
+};  
+
+enum
+{
+	ITEM_UNBIND_STATUS_NONE,
+	ITEM_UNBIND_STATUS_DOING,
+	ITEM_UNBIND_STATUS_END
+};
+
+
+struct ITEMUNBIND_ITEM_UNBIND_START_Data 
+{
+	BYTE	bIndex;				//装备
+};
+
+
+struct ITEMUNBIND_ITEM_UNBIND_RESULT_Data 
+{		
+	BYTE	bRlt;
+};
+
+#pragma pack (pop)
+#endif

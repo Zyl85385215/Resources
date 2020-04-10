@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{24483dc5-af7d-4682-bb46-57336843051a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MapFile">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{23ada405-ef13-4311-9fd4-e3642917a521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{5d31a08f-7096-451d-895d-7d4c4d0817f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapFile\CtrlAI">
+      <UniqueIdentifier>{838acdfd-1d8b-45dd-a73f-83942a612e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapFile\MapInfo">
+      <UniqueIdentifier>{d091582c-a4af-4f02-8c84-8efe59d5a275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapFile\Cfg">
+      <UniqueIdentifier>{8c7a45d9-2321-4e15-9e3c-9d14f88269a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MapServer.rc2">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+    <None Include="res\MapServer.ico">
+      <Filter>MFC\Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MapServerDlg.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MapServer.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\singleton.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\TimeControl.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnExtstr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnlist.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\xnThread.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\debug_def.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZNetServer.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapServerCfg.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_groupCmd.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_system_packet.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_ac_packet.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ServerCenter.h">
+      <Filter>MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapAIObj.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_mapcmd_packet.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ios_mapobj_packet.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControlCenter.h">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapAICtrl.h">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControlObject.h">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapBaseInfo.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapCenter.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapManager.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BornCenter.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MapPlate.h">
+      <Filter>MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\Include\ZNetPacket.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyConfig.h">
+      <Filter>MapFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StateCenter.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkillCenter.h">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.h">
+      <Filter>MapFile\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.h">
+      <Filter>MapFile\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RobotConfig.h">
+      <Filter>MapFile\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MwInclude\ZLogFile.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MapServer.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MapServerDlg.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\TimeControl.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnExtstr.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnlist.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\xnThread.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\debug_def.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ZNetServer.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapServerCfg.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServerCenter.cpp">
+      <Filter>MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapAIObj.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControlCenter.cpp">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapAICtrl.cpp">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControlObject.cpp">
+      <Filter>MapFile\CtrlAI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapBaseInfo.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapCenter.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapManager.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BornCenter.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapPlate.cpp">
+      <Filter>MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\EnemyConfig.cpp">
+      <Filter>MapFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkillCenter.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StateCenter.cpp">
+      <Filter>MapFile\MapInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.cpp">
+      <Filter>MapFile\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IosGameClient\Classes\IncludeCfg\StateConfig.cpp">
+      <Filter>MapFile\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotConfig.cpp">
+      <Filter>MapFile\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MwInclude\ZLogFile.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapServer.rc">
+      <Filter>MFC\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+#pragma once
+
+
+
+enum CMD_GROUP {
+	ACCOUNT	= 1,
+	SYSTEM	= 2,
+	GMTOOL	= 5,
+
+	USER	= 50,
+	NHOME,
+	FRIEND,
+	ITEM,
+	MAPOBJ	= 100,
+	MAPCMD,
+	AMZDATA	= 200,		//从旧的groupcmd的最后开始
+	JGSLAVE,
+	RPGCHAT,
+	RPGACTIVITY,
+	RPGRANK,
+	RPGAWARD,
+
+	NASALE,
+	RPGRELATION,
+};

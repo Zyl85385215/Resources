@@ -1,0 +1,150 @@
+﻿Build started 2020-3-7 20:36:59.
+     1>Project "E:\Mejoy\YHZJGame\Code\MWServers\SvrGame\SvrGame.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Creating "Debug\SvrGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\IosGameClient\Classes\IncludeCfg /I..\..\MwInclude /I..\..\IosGameClient\Classes\Include /I.\Src /I.\src\SCRIPTMODULE /I..\..\LuaPlus /I..\..\LuaPlusHelper /ZI /nologo /W3 /WX- /Od /Oy- /D _ISSERVER /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Debug_RpgSvrGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\MwInclude\DBLogControl.cpp
+         DBLogControl.cpp
+     1>e:\mejoy\yhzjgame\code\mwinclude\dbcontrol.h(28): warning C4099: 'DBControl' : type name first seen using 'class' now seen using 'struct'
+                 e:\mejoy\yhzjgame\code\mwservers\svrgame\src\amzdataserver.h(31) : see declaration of 'DBControl'
+     1>e:\mejoy\yhzjgame\code\luaplushelper\luaplussafefunction.h(19): warning C4003: not enough actual parameters for macro 'lua_pop'
+     1>e:\mejoy\yhzjgame\code\luaplushelper\luastatemanager.h(12): warning C4005: 'SAFE_DELETE' : macro redefinition
+                 e:\mejoy\yhzjgame\code\mwservers\svrgame\src\amzdataserver.h(8) : see previous definition of 'SAFE_DELETE'
+     1>e:\mejoy\yhzjgame\code\mwservers\svrgame\src\userwealth.h(61): warning C4099: 'DBControl' : type name first seen using 'struct' now seen using 'class'
+                 e:\mejoy\yhzjgame\code\mwinclude\dbcontrol.h(28) : see declaration of 'DBControl'
+     1>e:\mejoy\yhzjgame\code\mwservers\svrgame\src\mapsobject.h(10): warning C4099: 'ZPacket' : type name first seen using 'struct' now seen using 'class'
+                 e:\mejoy\yhzjgame\code\iosgameclient\classes\include\znetpacket.h(11) : see declaration of 'ZPacket'
+     1>e:\mejoy\yhzjgame\code\iosgameclient\classes\includecfg\itemconfig.h(206): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mejoy\yhzjgame\code\iosgameclient\classes\include\ios_item_packet.h(66): warning C4099: 'MallItemCfg' : type name first seen using 'class' now seen using 'struct'
+                 e:\mejoy\yhzjgame\code\iosgameclient\classes\includecfg\mallconfig.h(12) : see declaration of 'MallItemCfg'
+     1>e:\mejoy\yhzjgame\code\mwinclude\debug_def.h(53): warning C4005: 'ASSERT' : macro redefinition
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(334) : see previous definition of 'ASSERT'
+     1>e:\mejoy\yhzjgame\code\mwinclude\debug_def.h(58): warning C4005: 'TRACE' : macro redefinition
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(300) : see previous definition of 'TRACE'
+     1>e:\mejoy\yhzjgame\code\mwinclude\dblogcontrol.cpp(83): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\mejoy\yhzjgame\code\mwinclude\dblogcontrol.cpp(84): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(238) : see declaration of 'strdup'
+     1>e:\mejoy\yhzjgame\code\mwinclude\dblogcontrol.cpp(227): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\mejoy\yhzjgame\code\mwinclude\dblogcontrol.cpp(253): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'vsprintf'
+     1>e:\mejoy\yhzjgame\code\mwinclude\dblogcontrol.cpp(304): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(248) : see declaration of 'strnicmp'
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Debug\Debug_RpgSvrGame.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\MwLib /LIBPATH:..\..\LIB JNetStaticLib_d.lib MysqlDll_d.lib LuaPlusLibD_1100.lib /NODEFAULTLIB:LIBCMTD.lib /MANIFEST /ManifestFile:"Debug\Debug_RpgSvrGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Mejoy\YHZJGame\Code\MWServers\Debug\Debug_RpgSvrGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:"..\Debug\Debug_RpgSvrGame.lib" /MACHINE:X86 Debug\SvrGame.res
+         Debug\Debug_RpgSvrGame.exe.embed.manifest.res
+         Debug\AchievementCfg.obj
+         Debug\ActivedegreeCfg.obj
+         Debug\EnemyDropConfig.obj
+         Debug\EquipConfig.obj
+         Debug\ExpMultipleCfg.obj
+         Debug\GameActivityCfg.obj
+         Debug\GameAwardCfg.obj
+         Debug\HorseConfig.obj
+         Debug\ItemConfig.obj
+         Debug\MallConfig.obj
+         Debug\MapConfig.obj
+         Debug\MapCopyConfig.obj
+         Debug\MapStaticCfg.obj
+         Debug\MentoringCfg.obj
+         Debug\QuestConfig.obj
+         Debug\SkillConfig.obj
+         Debug\SlaveConfig.obj
+         Debug\StarSysConfig.obj
+         Debug\StateConfig.obj
+         Debug\TestAwardCfg.obj
+         Debug\TestLibraryCfg.obj
+         Debug\TextConfig.obj
+         Debug\TitleConfig.obj
+         Debug\UserConfig.obj
+         Debug\VipConfig.obj
+         Debug\LuaStateManager.obj
+         Debug\DBControl.obj
+         Debug\DBIO.obj
+         Debug\DBLogControl.obj
+         Debug\debug_def.obj
+         Debug\md5Capi.obj
+         Debug\TimeControl.obj
+         Debug\xnExtstr.obj
+         Debug\xnlist.obj
+         Debug\xnThread.obj
+         Debug\ZLogFile.obj
+         Debug\LuaDialog.obj
+         Debug\NoticeDialog.obj
+         Debug\AchievementCenter.obj
+         Debug\AmzDataServer.obj
+         Debug\BossState.obj
+         Debug\CallMapEnemy.obj
+         Debug\ChatCenter.obj
+         Debug\DebugMsg.obj
+         Debug\ExpMultipleData.obj
+         Debug\FamilyCenter.obj
+         Debug\FamilyObject.obj
+         Debug\FortCenter.obj
+         Debug\FriendCenter.obj
+         Debug\FsGameCenter.obj
+         Debug\GameActivityCenter.obj
+         Debug\GameAwardCenter.obj
+         Debug\GMActiveCfg.obj
+         Debug\HomeBattleCenter.obj
+         Debug\HorseData.obj
+         Debug\ItemCenter.obj
+         Debug\ItemManage.obj
+         Debug\ItemOpCenter.obj
+         Debug\MailCenter.obj
+         Debug\MakeSkillData.obj
+         Debug\MapObjCenter.obj
+         Debug\MapSObject.obj
+         Debug\MarkGameDB.obj
+         Debug\MarryCenter.obj
+         Debug\MCopyCenter.obj
+         Debug\MentoringCenter.obj
+         Debug\NASaleCenter.obj
+         Debug\NewActivityMsgCenter.obj
+         Debug\NumberData.obj
+         Debug\P2PAskCenter.obj
+         Debug\RankCenter.obj
+         Debug\LuaStateManagerPlus.obj
+         Debug\ServerCfg.obj
+         Debug\ShopCenter.obj
+         Debug\SkillCenter.obj
+         Debug\SlaveData.obj
+         Debug\SlaveOpCenter.obj
+         Debug\TeamData.obj
+         Debug\TitleCenter.obj
+         Debug\UserData.obj
+         Debug\UserDataEx.obj
+         Debug\UserFlag.obj
+         Debug\UserList.obj
+         Debug\UserQuest.obj
+         Debug\UserRecord.obj
+         Debug\UserWealth.obj
+         Debug\VIPCenter.obj
+         Debug\WarRank.obj
+         Debug\WorldFlag.obj
+         Debug\WorldTest.obj
+         Debug\ZNetGamesvr.obj
+         Debug\stdafx.obj
+         Debug\SvrGame.obj
+         Debug\SvrGameDlg.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Debug_RpgSvrGame.exe.embed.manifest" /manifest Debug\Debug_RpgSvrGame.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         SvrGame.vcxproj -> E:\Mejoy\YHZJGame\Code\MWServers\SvrGame\..\Debug\Debug_RpgSvrGame.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\SvrGame.unsuccessfulbuild".
+         Touching "Debug\SvrGame.lastbuildstate".
+     1>Done Building Project "E:\Mejoy\YHZJGame\Code\MWServers\SvrGame\SvrGame.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.03

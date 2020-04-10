@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BC38657F-73B9-4C18-AC4B-823580734BA0}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug.win32</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\android;..\Classes\UIFile;..\;..\Classes\MapFile;..\Classes\NetFile;..\Classes\DataFile;..\Classes\Include;..\Classes\IncludeCfg;..\Classes;..\Classes\ScriptFile;..\..\cocos2d-x-2.2.2\cocos2dx;..\..\cocos2d-x-2.2.2\cocos2dx\include;..\..\cocos2d-x-2.2.2\cocos2dx\kazmath\include;..\..\cocos2d-x-2.2.2\cocos2dx\platform\win32;..\..\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32;..\..\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32\pthread;..\..\cocos2d-x-2.2.2\cocos2dx\platform\third_party\win32\OGLES;..\..\cocos2d-x-2.2.2\extensions;..\..\cocos2d-x-2.2.2\external;..\..\cocos2d-x-2.2.2\CocosDenshion\include;..\..\cocos2d-x-2.2.2\cocos2dx\platform;..\..\cocos2d-x-2.2.2\scripting\lua\lua;..\..\ccocos2d-x-2.2.2\scripting\lua\tolua;..\..\cocos2d-x-2.2.2\scripting\lua\cocos2dx_support;..\..\cocos2d-x-2.2.2\scripting\lua\proj.android;..\..\ccocos2d-x-2.2.2\scripting\lua\proj.win32;..\..\cocos2d-x-2.2.2\scripting\lua\proj.blackberry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;libiconv.lib;liblua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>IosGameClient.h</HeaderFileName>
+      <InterfaceIdentifierFileName>IosGameClient_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>IosGameClient_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/IosGameClient.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\android;.;..\Classes\UIFile;..\;..\Classes\MapFile;..\Classes\NetFile;..\Classes\DataFile;..\Classes\Include;..\Classes\IncludeCfg;..\Classes;..\..\cocos2d-2.0-x-2.0.3\cocos2dx;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\include;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\kazmath\include;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\platform\win32;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32\pthread;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\platform\third_party\win32\OGLES;..\..\cocos2d-2.0-x-2.0.3\external;..\..\cocos2d-2.0-x-2.0.3\CocosDenshion\include;..\..\cocos2d-2.0-x-2.0.3\cocos2dx\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;libiconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>IosGameClient.h</HeaderFileName>
+      <InterfaceIdentifierFileName>IosGameClient_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>IosGameClient_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/IosGameClient.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\IosGameClient.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IosGameClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\android\com_mejoygame_rpgwar_JniCall.h" />
+    <ClInclude Include="..\android\IOSThirdPlat.h" />
+    <ClInclude Include="..\android\JniUtil.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\DataFile\AmzDataBase.h" />
+    <ClInclude Include="..\Classes\DataFile\BuffObj.h" />
+    <ClInclude Include="..\Classes\DataFile\ClientAchievement.h" />
+    <ClInclude Include="..\Classes\DataFile\ClientChat.h" />
+    <ClInclude Include="..\Classes\DataFile\ClientFlag.h" />
+    <ClInclude Include="..\Classes\DataFile\ClientQuest.h" />
+    <ClInclude Include="..\Classes\DataFile\EquipData.h" />
+    <ClInclude Include="..\Classes\DataFile\FamilyCenter.h" />
+    <ClInclude Include="..\Classes\DataFile\FortCenter.h" />
+    <ClInclude Include="..\Classes\DataFile\GameActivity.h" />
+    <ClInclude Include="..\Classes\DataFile\GameAwardData.h" />
+    <ClInclude Include="..\Classes\DataFile\HorseData.h" />
+    <ClInclude Include="..\Classes\DataFile\ItemData.h" />
+    <ClInclude Include="..\Classes\DataFile\RankData.h" />
+    <ClInclude Include="..\Classes\DataFile\RelationshipData.h" />
+    <ClInclude Include="..\Classes\DataFile\SkillData.h" />
+    <ClInclude Include="..\Classes\DataFile\SlaveData.h" />
+    <ClInclude Include="..\Classes\DataFile\StateData.h" />
+    <ClInclude Include="..\Classes\DataFile\UserData.h" />
+    <ClInclude Include="..\Classes\GameLoadScene.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\GlobalDefine.h" />
+    <ClInclude Include="..\Classes\GlobalFunction.h" />
+    <ClInclude Include="..\Classes\HttpDownThread.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\AchievementCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\ActivedegreeCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\EnemyConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\EnemyDropConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\EquipConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\FaceConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\FaqHelpCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\GameActivityCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\GameAwardCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\HorseConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\ItemConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\MallConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\MapConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\MapCopyConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\MapStaticCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\MentoringCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\QuestConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\SkillConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\SkinConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\SlaveConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\StarSysConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\StateConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\TestAwardCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\TestLibraryCfg.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\TextConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\TitleConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\UserConfig.h" />
+    <ClInclude Include="..\Classes\IncludeCfg\VipConfig.h" />
+    <ClInclude Include="..\Classes\Include\ios_activity_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_ac_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_amzdata_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_award_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_groupCmd.h" />
+    <ClInclude Include="..\Classes\Include\ios_home_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_item_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_mapcmd_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_mapobj_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_muli_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_nasale_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_rank_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_relation_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_rpgchat_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_slave_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_system_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_user_packet.h" />
+    <ClInclude Include="..\Classes\Include\ios_yjgslave_packet.h" />
+    <ClInclude Include="..\Classes\Include\random.h" />
+    <ClInclude Include="..\Classes\Include\stdafx.h" />
+    <ClInclude Include="..\Classes\Include\ZNetPacket.h" />
+    <ClInclude Include="..\Classes\LoginScene.h" />
+    <ClInclude Include="..\Classes\MapFile\EffectObj.h" />
+    <ClInclude Include="..\Classes\MapFile\EffectSprite.h" />
+    <ClInclude Include="..\Classes\MapFile\GuideCenter.h" />
+    <ClInclude Include="..\Classes\MapFile\GuideLayer.h" />
+    <ClInclude Include="..\Classes\MapFile\MapAIObj.h" />
+    <ClInclude Include="..\Classes\MapFile\MapControl.h" />
+    <ClInclude Include="..\Classes\MapFile\MapLayer.h" />
+    <ClInclude Include="..\Classes\MapFile\MapMouse.h" />
+    <ClInclude Include="..\Classes\MapFile\MapObj.h" />
+    <ClInclude Include="..\Classes\MapFile\MapObjManagers.h" />
+    <ClInclude Include="..\Classes\MapFile\MapOthers.h" />
+    <ClInclude Include="..\Classes\MapFile\MapPlayer.h" />
+    <ClInclude Include="..\Classes\MapFile\MapSprite.h" />
+    <ClInclude Include="..\Classes\MapFile\MapTile.h" />
+    <ClInclude Include="..\Classes\MapFile\MObjActControl.h" />
+    <ClInclude Include="..\Classes\MapFile\ParticleCenter.h" />
+    <ClInclude Include="..\Classes\MapFile\ParticleLayer.h" />
+    <ClInclude Include="..\Classes\NetFile\ODSocket.h" />
+    <ClInclude Include="..\Classes\NetFile\PacketCenter.h" />
+    <ClInclude Include="..\Classes\NetFile\SocketManager.h" />
+    <ClInclude Include="..\Classes\ReconnectGame.h" />
+    <ClInclude Include="..\Classes\ResManage.h" />
+    <ClInclude Include="..\Classes\singleton.h" />
+    <ClInclude Include="..\Classes\SoundCenter.h" />
+    <ClInclude Include="..\Classes\UIFile\AchievementMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ActivateMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ActivityMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\AutoMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\BagMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ChatMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ControlMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\BankMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\CreateRoleMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\CtrlObj.h" />
+    <ClInclude Include="..\Classes\UIFile\EquipDuraMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\EquipStarMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\FamilyMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\FaqHelpMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\FlappybirdMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\FriendChooseMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\FriendMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\GameAwardMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\GetNumMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\GreenModeMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\HorseObjMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\Interface.h" />
+    <ClInclude Include="..\Classes\UIFile\InterfaceLayer.h" />
+    <ClInclude Include="..\Classes\UIFile\ItemInfoMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\LoginMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\LuckBetMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MailMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MainMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MakeLayer.h" />
+    <ClInclude Include="..\Classes\UIFile\MakeSkillMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MallMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ManorMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MapCopyMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MarryMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MCAwardMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MentoringMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MiniRadio.h" />
+    <ClInclude Include="..\Classes\UIFile\MissonMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\MyTextInput.h" />
+    <ClInclude Include="..\Classes\UIFile\NASaleMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\PetObjMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\RankMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\SelLineMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\ShopMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\SkillMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\SkillSPMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\SlaveFormCtrl.h" />
+    <ClInclude Include="..\Classes\UIFile\StarSysMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\StoneComposeMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\TeamMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\TxtLinkView.h" />
+    <ClInclude Include="..\Classes\UIFile\UserParamMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\VipMenu.h" />
+    <ClInclude Include="..\Classes\UIFile\WTestMenu.h" />
+    <ClInclude Include="..\Classes\UpdateScene.h" />
+    <ClInclude Include="..\Classes\xnExtstr.h" />
+    <ClInclude Include="..\Classes\xnlist.h" />
+    <ClInclude Include="..\debug_def.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\android\com_mejoygame_rpgwar_JniCall.cpp" />
+    <ClCompile Include="..\android\IOSThirdPlat.cpp" />
+    <ClCompile Include="..\android\JniUtil.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\DataFile\AmzDataBase.cpp" />
+    <ClCompile Include="..\Classes\DataFile\BuffObj.cpp" />
+    <ClCompile Include="..\Classes\DataFile\ClientAchievement.cpp" />
+    <ClCompile Include="..\Classes\DataFile\ClientChat.cpp" />
+    <ClCompile Include="..\Classes\DataFile\ClientFlag.cpp" />
+    <ClCompile Include="..\Classes\DataFile\ClientQuest.cpp" />
+    <ClCompile Include="..\Classes\DataFile\EquipData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\FamilyCenter.cpp" />
+    <ClCompile Include="..\Classes\DataFile\FortCenter.cpp" />
+    <ClCompile Include="..\Classes\DataFile\GameActivity.cpp" />
+    <ClCompile Include="..\Classes\DataFile\GameAwardData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\Horsedata.cpp" />
+    <ClCompile Include="..\Classes\DataFile\ItemData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\RankData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\RelationshipData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\SkillData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\SlaveData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\StateData.cpp" />
+    <ClCompile Include="..\Classes\DataFile\UserData.cpp" />
+    <ClCompile Include="..\Classes\GameLoadScene.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\GlobalFunction.cpp" />
+    <ClCompile Include="..\Classes\HttpDownThread.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\AchievementCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\ActivedegreeCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\EnemyConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\EnemyDropConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\EquipConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\FaceConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\FaqHelpCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\GameActivityCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\GameAwardCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\HorseConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\ItemConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\MallConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\MapConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\MapCopyConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\MapStaticCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\MentoringCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\QuestConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\SkillConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\SkinConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\SlaveConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\StarSysConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\StateConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\TestAwardCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\TestLibraryCfg.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\TextConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\TitleConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\UserConfig.cpp" />
+    <ClCompile Include="..\Classes\IncludeCfg\VipConfig.cpp" />
+    <ClCompile Include="..\Classes\Include\random.cpp" />
+    <ClCompile Include="..\Classes\LoginScene.cpp" />
+    <ClCompile Include="..\Classes\MapFile\EffectObj.cpp" />
+    <ClCompile Include="..\Classes\MapFile\EffectSprite.cpp" />
+    <ClCompile Include="..\Classes\MapFile\GuideCenter.cpp" />
+    <ClCompile Include="..\Classes\MapFile\GuideLayer.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapAIObj.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapControl.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapLayer.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapMouse.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapObj.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapObjManagers.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapOthers.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapPlayer.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapSprite.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MapTile.cpp" />
+    <ClCompile Include="..\Classes\MapFile\MObjActControl.cpp" />
+    <ClCompile Include="..\Classes\MapFile\ParticleCenter.cpp" />
+    <ClCompile Include="..\Classes\MapFile\ParticleLayer.cpp" />
+    <ClCompile Include="..\Classes\NetFile\ODSocket.cpp" />
+    <ClCompile Include="..\Classes\NetFile\PacketCenter.cpp" />
+    <ClCompile Include="..\Classes\NetFile\SocketManager.cpp" />
+    <ClCompile Include="..\Classes\ReconnectGame.cpp" />
+    <ClCompile Include="..\Classes\ResManage.cpp" />
+    <ClCompile Include="..\Classes\SoundCenter.cpp" />
+    <ClCompile Include="..\Classes\UIFile\AchievementMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ActivateMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ActivityMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\AutoMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\BagMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ChatMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ControlMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\BankMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\CreateRoleMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\CtrlObj.cpp" />
+    <ClCompile Include="..\Classes\UIFile\EquipDuraMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\EquipStarMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\FamilyMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\FaqHelpMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\FlappybirdMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\FriendChooseMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\FriendMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\GameAwardMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\GetNumMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\GreenModeMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\HorseObjMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\Interface.cpp" />
+    <ClCompile Include="..\Classes\UIFile\InterfaceLayer.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ItemInfoMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\LoginMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\LuckBetMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MailMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MainMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MakeLayer.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MakeSkillMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MallMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ManorMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MapCopyMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MarryMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MCAwardMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MentoringMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MiniRadio.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MissonMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\MyTextInput.cpp" />
+    <ClCompile Include="..\Classes\UIFile\NASaleMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\PetObjMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\RankMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\SelLineMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\ShopMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\SkillMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\SkillSPMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\SlaveFormCtrl.cpp" />
+    <ClCompile Include="..\Classes\UIFile\StarSysMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\StoneComposeMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\TeamMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\TxtLinkView.cpp" />
+    <ClCompile Include="..\Classes\UIFile\UserParamMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\VipMenu.cpp" />
+    <ClCompile Include="..\Classes\UIFile\WTestMenu.cpp" />
+    <ClCompile Include="..\Classes\UpdateScene.cpp" />
+    <ClCompile Include="..\Classes\xnExtstr.cpp" />
+    <ClCompile Include="..\Classes\xnlist.cpp" />
+    <ClCompile Include="..\debug_def.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,51 @@
+#ifndef _UPGRADE_PACKET_H_
+#define _UPGRADE_PACKET_H_
+
+#pragma pack (push)
+#pragma pack (1)
+
+#define ORIENTED_UPGRADE_SUCCESS					0x00
+#define	ORIENTED_UPGRADE_FAILED_TYPE				0x01
+#define	ORIENTED_UPGRADE_FAILED_STONE				0x02
+#define	ORIENTED_UPGRADE_FAILED_TIME				0x03
+#define	ORIENTED_UPGRADE_FAILED_MONEY				0x04
+#define	ORIENTED_UPGRADE_FAILED_DURA				0x05
+#define	ORIENTED_UPGRADE_FAILED_LEVEL				0x06
+#define ORIENTED_UPGRADE_FAILED_OTHER				0x07
+
+enum _UPGRADE  {	
+	UPGRADE_OPEN,
+	UPGRADE_OK,			
+	UPGRADE_RESULT,	
+	//特殊升级(装备加强,定向提升)
+	UPGRADE_ORIENTED_OPEN,
+	UPGRADE_ORIENTED_OK,			
+	UPGRADE_ORIENTED_RESULT,
+};
+
+struct UPGRADE_UPGRADE_OPEN_Data {
+};
+
+struct UPGRADE_UPGRADE_OK_Data {
+	DWORD	itemIndex;		
+};
+
+struct UPGRADE_UPGRADE_RESULT_Data {	
+	DWORD	itemIndex;	
+	BYTE	success;		
+};
+
+struct UPGRADE_UPGRADE_ORIENTED_OPEN_Data {
+};
+
+struct UPGRADE_UPGRADE_ORIENTED_OK_Data {
+	DWORD	itemIndex;		
+};
+
+struct UPGRADE_UPGRADE_ORIENTED_RESULT_Data {	
+	DWORD	itemIndex;	
+	BYTE	success;		
+};
+
+#pragma pack (pop)
+#endif

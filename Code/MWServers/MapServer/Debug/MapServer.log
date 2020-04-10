@@ -1,0 +1,128 @@
+﻿Build started 2020-2-10 22:43:00.
+     1>Project "E:\Mejoy\YHZJGame\Code\MWServers\MapServer\MapServer.vcxproj" on node 5 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Creating "Debug\MapServer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\IosGameClient\Classes\IncludeCfg /I..\..\IosGameClient\Classes\Include /I..\..\MwInclude /I.\Src /ZI /nologo /W3 /WX- /Od /Oy- /D _ISSERVER /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Debug_RpgMapServer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\IosGameClient\Classes\IncludeCfg /I..\..\IosGameClient\Classes\Include /I..\..\MwInclude /I.\Src /ZI /nologo /W3 /WX- /Od /Oy- /D _ISSERVER /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Debug_RpgMapServer.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\IosGameClient\Classes\IncludeCfg\EnemyConfig.cpp ..\..\IosGameClient\Classes\IncludeCfg\SkillConfig.cpp ..\..\IosGameClient\Classes\IncludeCfg\StateConfig.cpp ..\..\MwInclude\TimeControl.cpp ..\..\MwInclude\ZLogFile.cpp ..\..\MwInclude\debug_def.cpp ..\..\MwInclude\xnExtstr.cpp ..\..\MwInclude\xnThread.cpp ..\..\MwInclude\xnlist.cpp MapServer.cpp MapServerDlg.cpp src\BornCenter.cpp src\ControlCenter.cpp src\ControlObject.cpp src\MapAICtrl.cpp src\MapAIObj.cpp src\MapBaseInfo.cpp src\MapCenter.cpp src\MapManager.cpp src\MapPlate.cpp src\MapServerCfg.cpp src\RobotConfig.cpp src\ServerCenter.cpp src\SkillCenter.cpp src\StateCenter.cpp src\ZNetServer.cpp
+         MapPlate.cpp
+     1>e:\mejoy\yhzjgame\code\iosgameclient\classes\include\znetpacket.h(11): warning C4099: 'ZPacket' : type name first seen using 'class' now seen using 'struct'
+                 e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.h(10) : see declaration of 'ZPacket'
+     1>e:\mejoy\yhzjgame\code\iosgameclient\classes\includecfg\enemyconfig.h(14): warning C4099: 'EnemyBase' : type name first seen using 'class' now seen using 'struct'
+                 e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapaiobj.h(12) : see declaration of 'EnemyBase'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.cpp(197): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.cpp(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.cpp(199): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.cpp(266): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.cpp(321): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         MapManager.cpp
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapplate.h(10): warning C4099: 'ZPacket' : type name first seen using 'struct' now seen using 'class'
+                 e:\mejoy\yhzjgame\code\iosgameclient\classes\include\znetpacket.h(11) : see declaration of 'ZPacket'
+     1>e:\mejoy\yhzjgame\code\iosgameclient\classes\includecfg\enemyconfig.h(14): warning C4099: 'EnemyBase' : type name first seen using 'class' now seen using 'struct'
+                 e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapaiobj.h(12) : see declaration of 'EnemyBase'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(115): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(121): warning C4244: '=' : conversion from 'WORD' to 'BYTE', possible loss of data
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(266): warning C4244: '=' : conversion from 'DWORD' to 'BYTE', possible loss of data
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(359): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(523): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(534): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(646): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(647): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(648): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(688): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(689): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(690): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(1041): warning C4018: '>=' : signed/unsigned mismatch
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(1071): warning C4018: '>=' : signed/unsigned mismatch
+     1>e:\mejoy\yhzjgame\code\mwservers\mapserver\src\mapmanager.cpp(1325): warning C4244: '=' : conversion from 'DWORD' to 'WORD', possible loss of data
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         ZNetServer.cpp
+         StateCenter.cpp
+         SkillCenter.cpp
+         ServerCenter.cpp
+         RobotConfig.cpp
+         MapServerCfg.cpp
+         MapCenter.cpp
+         MapBaseInfo.cpp
+         MapAIObj.cpp
+         MapAICtrl.cpp
+         ControlObject.cpp
+         ControlCenter.cpp
+         BornCenter.cpp
+         MapServerDlg.cpp
+         MapServer.cpp
+         xnlist.cpp
+         xnThread.cpp
+         xnExtstr.cpp
+         debug_def.cpp
+         ZLogFile.cpp
+         TimeControl.cpp
+         StateConfig.cpp
+         SkillConfig.cpp
+         EnemyConfig.cpp
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Debug\Debug_RpgMapServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\MwLib JNetStaticLib_d.lib /NODEFAULTLIB:LIBCMTD.lib /MANIFEST /ManifestFile:"Debug\Debug_RpgMapServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Mejoy\YHZJGame\Code\MWServers\Debug\Debug_RpgMapServer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:"..\Debug\Debug_RpgMapServer.lib" /MACHINE:X86 Debug\MapServer.res
+         Debug\Debug_RpgMapServer.exe.embed.manifest.res
+         Debug\EnemyConfig.obj
+         Debug\SkillConfig.obj
+         Debug\StateConfig.obj
+         Debug\debug_def.obj
+         Debug\TimeControl.obj
+         Debug\xnExtstr.obj
+         Debug\xnlist.obj
+         Debug\xnThread.obj
+         Debug\ZLogFile.obj
+         Debug\MapServer.obj
+         Debug\MapServerDlg.obj
+         Debug\BornCenter.obj
+         Debug\ControlCenter.obj
+         Debug\ControlObject.obj
+         Debug\MapAICtrl.obj
+         Debug\MapAIObj.obj
+         Debug\MapBaseInfo.obj
+         Debug\MapCenter.obj
+         Debug\MapManager.obj
+         Debug\MapPlate.obj
+         Debug\MapServerCfg.obj
+         Debug\RobotConfig.obj
+         Debug\ServerCenter.obj
+         Debug\SkillCenter.obj
+         Debug\StateCenter.obj
+         Debug\ZNetServer.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Debug_RpgMapServer.exe.embed.manifest" /manifest Debug\Debug_RpgMapServer.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         MapServer.vcxproj -> E:\Mejoy\YHZJGame\Code\MWServers\MapServer\..\Debug\Debug_RpgMapServer.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\MapServer.unsuccessfulbuild".
+         Touching "Debug\MapServer.lastbuildstate".
+     1>Done Building Project "E:\Mejoy\YHZJGame\Code\MWServers\MapServer\MapServer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.03

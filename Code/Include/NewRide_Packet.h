@@ -1,0 +1,144 @@
+#pragma once
+
+#include <windows.h>
+#include "slave_packet.h"
+
+#pragma pack (push)
+#pragma pack (1)
+
+enum NEWRIDE_CMD
+{
+	S_NEWRIDE_INFO,
+	S_NEWRIDE_PARAMCHG,
+	S_NEWRIDE_EQUIP,
+	S_NEWRIDE_HPMP,
+	S_NEWRIDE_EXP,
+	S_NEWRIDE_STATE,
+	S_NEWRIDE_FREE,
+
+	C_NEWRIDE_RUN,
+	C_NEWRIDE_FLY,
+	C_NEWRIDE_FREE,
+	C_NEWRIDE_ACTIVE,
+	C_NEWRIDE_FEED,
+	C_NEWRIDE_SETPOINT,
+	C_NEWRIDE_REQUESTTMP,
+	C_NEWRIDE_ACCPTTMP,
+
+	S_NEWRIDE_TMPATTRIBPER,
+
+	C_NEWRIDE_EQUIP,
+	C_NEWRIDE_UNEQUIP,
+	C_NEWRIDE_QUALITYUP,
+	S_NEWRIDE_QUALITYUP_RTL,
+	C_NEWRIDE_CLEARQUA,
+};
+
+struct NEWRIDE_C_NEWRIDE_SETPOINT_Data {
+	DWORD	dwID;
+	WORD	str;
+	WORD	dex;
+	WORD	wis;
+	WORD	ing;
+	WORD	con;
+};
+
+struct NEWRIDE_C_NEWRIDE_FREE_Data {
+	DWORD	dwID;
+};
+
+struct NEWRIDE_C_NEWRIDE_FEED_Data {
+	DWORD	dwID;
+	DWORD	itemIndex;
+};
+
+struct NEWRIDE_C_NEWRIDE_REQUESTTMP_Data {
+	DWORD	dwID;
+};
+
+struct NEWRIDE_C_NEWRIDE_EQUIP_Data {
+	DWORD	dwID;
+	DWORD	dwIndex;
+};
+
+struct NEWRIDE_C_NEWRIDE_UNEQUIP_Data {
+	DWORD	dwID;
+	BYTE	bPos;
+};
+
+struct NEWRIDE_C_NEWRIDE_QUALITYUP_Data {
+	DWORD	dwID;
+	DWORD	dwUsedID;
+};
+
+struct NEWRIDE_C_NEWRIDE_CLEARQUA_Data {
+	DWORD	dwID;
+};
+
+struct NEWRIDE_S_NEWRIDE_QUALITYUP_RTL_Data {
+	DWORD	dwID;
+	BYTE	bQuality;
+};
+
+struct NEWRIDE_C_NEWRIDE_ACTIVE_Data {
+	DWORD	dwID;
+	BYTE	bActive;
+};
+
+
+struct NEWRIDE_S_NEWRIDE_FREE_Data {
+	DWORD dwID;
+};
+
+struct NEWRIDE_S_NEWRIDE_TMPATTRIBPER_Data {
+	WORD	wTmp[5];
+};
+
+struct NEWRIDE_S_NEWRIDE_INFO_Data {
+	SlaveDataEx	sData;
+	WORD	wStr;
+	WORD	wCon;
+	WORD	wDex;
+	WORD	wWis;
+	WORD	wIng;
+	BYTE	bNew;
+};
+
+struct NEWRIDE_S_NEWRIDE_PARAMCHG_Data {
+	DWORD	dwID;
+	WORD	wStr;
+	WORD	wCon;
+	WORD	wDex;
+	WORD	wWis;
+	WORD	wIng;
+	WORD	wPoint;
+	WORD	wLv;
+	DWORD	dwExp;
+};
+
+struct NEWRIDE_S_NEWRIDE_EQUIP_Data {
+	DWORD	dwID;
+	DWORD	dwEquip1;
+	DWORD	dwEquip2;
+	DWORD	dwEquip3;
+};
+
+struct NEWRIDE_S_NEWRIDE_HPMP_Data {
+	DWORD	dwID;
+	DWORD	dwHp;
+	DWORD	dwMp;
+};
+
+struct NEWRIDE_S_NEWRIDE_EXP_Data {
+	DWORD	dwID;
+	DWORD	dwExp;
+};
+
+struct NEWRIDE_S_NEWRIDE_STATE_Data {
+	DWORD	dwActiveID;
+	BYTE	bRiding;
+	BYTE	bRun;
+};
+
+
+#pragma pack (pop)
